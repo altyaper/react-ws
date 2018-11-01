@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 import TodoList from './todo_list';
-import CSS from '../css/styles.scss';
 
 class App extends Component {
   render() {

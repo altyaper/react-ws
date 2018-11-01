@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import Item from './item';
 
-class TodoItems extends Component {
-  render() {
-      return (
+const TodoItems = (props) => {
+    return (
         <ul>
-          { this.props.items.map((item, key) => {
+          { props.items.map((item, key) => {
             return (
-              <Item key={key} text={item}/>
+              <li key={key}>{item}</li>
             )
           })}
         </ul>
       );
-  }
 }
+
+
+
+
 
 export default TodoItems;

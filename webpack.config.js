@@ -1,6 +1,7 @@
 var path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './components/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -33,11 +34,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  devServer: {
-    port: 5555,
-    compress: true,
-    stats: 'errors-only',
-    historyApiFallback: true
   }
 }
